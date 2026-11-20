@@ -1,0 +1,1 @@
+var e=document.querySelector(`#a-age`),t=document.querySelector(`[data-minor]`),n=document.querySelector(`#a-guardian`),r=()=>{let r=e.value===`minor`;t.hidden=!r,n.required=r};e.addEventListener(`change`,r),r();

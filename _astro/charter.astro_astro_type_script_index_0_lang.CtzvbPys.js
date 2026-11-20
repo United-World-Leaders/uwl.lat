@@ -1,0 +1,1 @@
+var e=[...document.querySelectorAll(`.toc a`)],t=new IntersectionObserver(t=>t.forEach(t=>{t.isIntersecting&&e.forEach(e=>e.classList.toggle(`on`,e.getAttribute(`href`)===`#`+t.target.id))}),{rootMargin:`-30% 0px -60% 0px`});e.forEach(e=>{let n=document.querySelector(e.getAttribute(`href`));n&&t.observe(n)});
